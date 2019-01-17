@@ -48,3 +48,15 @@ set mouse=a				 "鼠标可用
 set showmatch			 "括号匹配
 "set cursorcolumn		 "高亮所在列
 set cursorline		 	 "高亮所在行
+set smartindent     " 智能对齐方式
+filetype plugin indent on     " 开启插件
+
+if has("gui_running") 
+"au GUIEnter * simalt ~x " 窗口启动时自动最大化 
+"set guioptions-=m " 隐藏菜单栏 
+set guioptions-=T " 隐藏工具栏 
+set guioptions-=L " 隐藏左侧滚动条 
+set guioptions-=r " 隐藏右侧滚动条 
+set guioptions-=b " 隐藏底部滚动条 
+"set showtabline=0 " 隐藏Tab栏 
+endif
